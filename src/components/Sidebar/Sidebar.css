@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.wrapper .sidenav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 18%;
+  height: 100vh;
+  background: #231f20;
+}
+.wrapper .sidenav h4 {
+  color: rgb(161, 201, 187);
+  /* text-align: center; */
+  padding-top: 20px;
+  margin-left: 11px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: larger;
+  /* border-bottom: 1px solid rgb(204, 58, 0); */
+}
+
+.wrapper .sidenav .search {
+  /* border-bottom: 1px solid rgb(77, 77, 77) */
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  margin-top: 20px;
+
+  padding-bottom: 30px;
+}
+
+.wrapper .sidenav ul li {
+  list-style: none;
+  padding: 15px;
+  color: rgb(238, 224, 224);
+  text-decoration: none;
+}
+i {
+  margin-right: 8px;
+}
+
+.wrapper .main-content {
+  width: 82vw;
+  margin-left: 18vw;
+}
+
+.wrapper .sidenav .tech {
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  margin-top: 20px;
+  padding-bottom: 23px;
+  padding-top: 23px;
+}
