@@ -1,16 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Route, Switch } from "react-router-dom";
 import "./Header.css";
+import Button from "../Button/Button";
+
 function Header(props) {
   return (
     <div>
       <div className="header">
-        <h2>Paree looys, Guest!</h2>
-        <h6>CBRE Service Catalog</h6>
+        <h3>CBRE Service Catalog</h3>
       </div>
 
       <nav>
-        <ul class="main-nav">
+        <ul className="main-nav">
           <li>
             <NavLink to="/serivces">SERVICES </NavLink>
           </li>
@@ -25,6 +26,9 @@ function Header(props) {
           </li>
         </ul>
       </nav>
+      <Switch>
+        <Route path="/:nav" component={Button} />
+      </Switch>
     </div>
   );
 }

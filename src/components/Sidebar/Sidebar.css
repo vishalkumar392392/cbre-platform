@@ -19,17 +19,21 @@ body {
   padding-top: 20px;
   margin-left: 11px;
   margin-bottom: 5px;
-  margin-top: 20px;
+  margin-top: 6px;
   font-size: larger;
   /* border-bottom: 1px solid rgb(204, 58, 0); */
 }
-
-.wrapper .sidenav .search {
-  /* border-bottom: 1px solid rgb(77, 77, 77) */
+.wrapper .sidenav .searchStyle {
   border-bottom: 1px solid rgb(255, 255, 255, 0.1);
-  margin-top: 20px;
+  /* border-bottom: 1px solid rgb(77, 77, 77); */
+}
+.wrapper .sidenav .search {
+  /* margin-top: 20px; */
+  width: 30%;
+  background-color: #231f20;
+  border: none;
 
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .wrapper .sidenav ul li {
@@ -38,6 +42,12 @@ body {
   color: rgb(238, 224, 224);
   text-decoration: none;
 }
+
+.wrapper .sidenav ul li:active,
+.wrapper .sidenav ul li:visited {
+  border-left: 2px solid rgb(86, 88, 241);
+}
+
 i {
   margin-right: 8px;
 }
