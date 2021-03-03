@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Route, Switch } from "react-router-dom";
 import "./Header.css";
-import Button from "../Button/Button";
+import Content from "../../containers/Content/Content";
 
 function Header(props) {
   return (
@@ -13,7 +13,7 @@ function Header(props) {
       <nav>
         <ul className="main-nav">
           <li>
-            <NavLink to="/serivces">SERVICES </NavLink>
+            <NavLink to="/services">SERVICES </NavLink>
           </li>
           <li>
             <NavLink to="/libraries">Libraries</NavLink>
@@ -27,7 +27,7 @@ function Header(props) {
         </ul>
       </nav>
       <Switch>
-        <Route path="/:nav" component={Button} />
+        <Route path="/services" component={Content} />
       </Switch>
     </div>
   );

@@ -2,17 +2,21 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import "./Button.css";
+import "./Content.css";
 
-function Button(props) {
+function Content(props) {
   const [bussiness, setbussiness] = useState(null);
   const [persons, setPersons] = useState([]);
   const params = useParams();
+
   useEffect(() => {
+    console.log("useeffect");
     axios
       .get("https://randomuser.me/api/?results=10")
-      .then((res) => setPersons(res.data.results));
+      .then((res) => setPersons(res.data.results))
+      .catch((res) => console.log(res));
   }, [bussiness]);
+
   const hoverHandler = (event) => {
     let bus = (
       <div>
@@ -46,13 +50,13 @@ function Button(props) {
   };
   return (
     <div className="mx-5">
-      <div>
+      {/* <div>
         <h3 style={{ textTransform: "capitalize" }}>{params.nav}</h3>
-      </div>
+      </div> */}
       <input
         type="button"
         className="btn btn-success buttonStyle"
-        value="Bussiness"
+        value="Business"
         onMouseEnter={hoverHandler}
         onMouseLeave={() => setbussiness(null)}
       />
@@ -68,4 +72,4 @@ function Button(props) {
   );
 }
 
-export default Button;
+export default Content;
