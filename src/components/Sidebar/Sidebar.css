@@ -44,7 +44,7 @@ body {
 }
 
 .wrapper .sidenav ul li:active,
-.wrapper .sidenav ul li:visited {
+.wrapper .sidenav ul li:hover {
   border-left: 2px solid rgb(86, 88, 241);
 }
 
