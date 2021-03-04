@@ -1,0 +1,15 @@
+nav ul li,
+nav ul li {
+  color: #8b8a8a;
+  text-transform: uppercase;
+}
+nav ul li:active,
+nav ul li:hover {
+  cursor: pointer;
+  color: black;
+}
+nav ul li {
+}
+.NavStyle {
+  margin: 0px 25px;
+}
