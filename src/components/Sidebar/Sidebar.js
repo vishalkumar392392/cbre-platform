@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
 function Sidebar(props) {
+  const [search, setsearch] = useState("Search");
   return (
     <div className="wrapper">
       <div className="sidenav">
@@ -10,7 +11,13 @@ function Sidebar(props) {
         <ul>
           <li className="searchStyle">
             <i className="fas fa-search"></i>
-            <input className="search" type="text" placeholder="Search" />
+            <input
+              className="search"
+              type="text"
+              value={search}
+              onChange={(event) => setsearch(event.target.value)}
+              placeholder="Search"
+            />
           </li>
 
           <li>
@@ -25,38 +32,47 @@ function Sidebar(props) {
           <li>
             <i className="fas fa-puzzle-piece"></i>
             <NavLink
-              to="/apis"
+              to="/services"
               style={{ textDecoration: "none", color: "white" }}
             >
               Apis
             </NavLink>
           </li>
           <li>
-            <i className="far fa-file-word"></i>
+            <i className="fas fa-book-open"></i>
+            <NavLink
+              to="/libraries"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Libraries
+            </NavLink>
+          </li>
+          <li>
+            <i className="fas fa-adjust"></i>
+            <NavLink
+              to="/ux"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              UX
+            </NavLink>
+          </li>
+          <li>
+            <i className="fas fa-crop"></i>
+            <NavLink
+              to="/framework"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Framework
+            </NavLink>
+          </li>
+
+          <li>
+            <i style={{ marginRight: "13px" }} className="far fa-file-word"></i>
             <NavLink
               to="/docs"
               style={{ textDecoration: "none", color: "white" }}
             >
               Docs{" "}
-            </NavLink>
-          </li>
-          <li>
-            <i className="fas fa-plus"></i>
-            <NavLink
-              to="/create"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Create...{" "}
-            </NavLink>
-          </li>
-
-          <li className="tech">
-            <i className="fas fa-thumbtack"></i>
-            <NavLink
-              to="/techRadar"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Tech Radar{" "}
             </NavLink>
           </li>
         </ul>
