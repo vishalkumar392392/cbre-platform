@@ -9,8 +9,8 @@ function Header(props) {
   const navbar = (
     <nav>
       <ul className="main-nav">
-        <li>
-          <NavLink to="/services">SERVICES </NavLink>
+        <li style = {{fontStyle:"futura"}}>
+          <NavLink to="/services"><strong>SERVICES</strong> </NavLink>
         </li>
         <li>
           <NavLink to="/libraries">Libraries</NavLink>
@@ -28,11 +28,11 @@ function Header(props) {
     <div>
       <div className="header">
         {props.name === null ? (
-          <h3>CBRE Service Catalog</h3>
+          <h4   style={{fontStyle: "italic"}}>CBRE Developer Marketplace</h4>
         ) : (
           <div>
             <h3>{props.name}</h3>
-            <p>Devx Api Explorer</p>
+            <p>CBRE Api Explorer</p>
           </div>
         )}
       </div>

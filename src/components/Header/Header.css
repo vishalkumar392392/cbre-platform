@@ -1,6 +1,7 @@
 .header {
   height: 100px;
-  background-color: rgb(161, 201, 187);
+  /* background-color: rgb(161, 201, 187); */
+   background-color: #006a4d;
   background-image: radial-gradient(
     ellipse farthest-corner at 0 140%,
     rgb(59, 105, 93) 0%,
@@ -24,19 +25,22 @@
   font-weight: 600;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav li a,
+.main-nav li {
   padding: 8px 0;
-  color: #8b8a8a;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
   font-size: 90%;
+  font-size: 20px;
   transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
+
   color: black;
+ 
   border-bottom: 2px solid rgb(86, 88, 241);
 }

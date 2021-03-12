@@ -9,9 +9,12 @@ function FrameworkElement(props) {
     <div>
       <table class="table table-bordered ">
         <thead style={{ backgroundColor: "#f4f5f7" }}>
-          <tr>
+          <tr style={{
+            textAlign: "center",
+            whiteSpace: "nowrap"}}
+          >
             <th style={{ width: "5%" }}>Project Name</th>
-            <th style={{ width: "3%" }}>Description</th>
+            <th style={{ width: "25%" }}>Description</th>
             <th style={{ width: "6%" }}>Documentation</th>
             <th style={{ width: "4%" }}>Product Owners</th>
             <th style={{ width: "1%" }}>Technology Stack</th>

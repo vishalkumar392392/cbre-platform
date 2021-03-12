@@ -101,7 +101,7 @@ function Business(props) {
         <input
           type="button"
           className="btn btn-success btn-sm buttonStyle"
-          value="Bussiness Services"
+          value="Business Services"
           onMouseEnter={hoverHandler}
           onMouseLeave={() => setServices(null)}
         />

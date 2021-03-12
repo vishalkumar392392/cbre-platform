@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useState, useDispatch, useSelector } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Content.css";
@@ -254,7 +254,7 @@ function Content(props) {
             <tr>
               <th style={{ width: "5%" }}>Tower</th>
               <th style={{ width: "3%" }}>API</th>
-              <th style={{ width: "6%" }}>Description</th>
+              <th style={{ width: "25%" }}>Description</th>
               <th style={{ width: "6%" }}>Publishing App</th>
               <th style={{ width: "8%" }}>API Contacts</th>
             </tr>

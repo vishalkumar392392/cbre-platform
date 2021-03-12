@@ -43,22 +43,44 @@ function Navbar(props) {
     setShowLibraries(null);
   };
 
+
+  const  question = () =>{
+
+    setDisplay(null);
+    setshowUX(false);
+    setFrameWorks(null);
+    setShowLibraries(null);
+
+  }
+
   return (
     <div>
       <nav>
         <ul className="main-nav">
           <li onClick={displayButtons}>
-            <a to="/services">SERVICES </a>
+            <a  style = {{fontFamily: "FuturaBT-Medium,Helvetica,Arial,sans-serif",fontSize:"15px"}}to="/services">SERVICES </a>
           </li>
           <li onClick={libraries}>
-            <a to="/libraries">Libraries</a>
+            <a style = {{fontFamily: "FuturaBT-Medium,Helvetica,Arial,sans-serif",fontSize:"15px"}}to="/libraries">Libraries</a>
           </li>
           <li onClick={ux}>
-            <a to="/ux">UX</a>
+            <a style = {{fontFamily: "FuturaBT-Medium,Helvetica,Arial,sans-serif",fontSize:"15px"}} to="/ux">UX</a>
           </li>
-          <li onClick={framework}>
-            <a to="/framework">Frameworks</a>
+          <li  onClick={framework}>
+            <a style = {{fontFamily: "FuturaBT-Medium,Helvetica,Arial,sans-serif",fontSize:"15px"}} to="/framework">Frameworks</a>
           </li>
+
+          <li >
+            <a onClick={question}style = {{fontFamily: "FuturaBT-Medium,Helvetica,Arial,sans-serif",fontSize:"15px"}}to="/" >Q&amp;A</a>
+          </li>
+          <li >
+            <a onClick={question}style = {{fontFamily: "FuturaBT-Medium,Helvetica,Arial,sans-serif",fontSize:"15px"}}to="/" >Dashboards</a>
+          </li>
+
+          <li >
+            <a onClick={question} style = {{fontFamily: "FuturaBT-Medium,Helvetica,Arial,sans-serif",fontSize:"15px"}}to="/">Governance</a>
+          </li>
+
         </ul>
       </nav>
       <div>{display === true ? <Business /> : null}</div>

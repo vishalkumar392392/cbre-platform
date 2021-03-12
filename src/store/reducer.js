@@ -7,7 +7,7 @@ const reducer = (state = initialState, action) => {
     case "ADD_HEADER":
       return {
         ...state,
-        name: "APIs",
+        name: "API'S",
       };
     case "ADD_FRAMEWORK":
       return {
